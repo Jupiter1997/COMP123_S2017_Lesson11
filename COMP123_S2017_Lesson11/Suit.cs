@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 /*
  * Name: Marvin Jupiter R. Vargas
  * Date: July 25, 2017
- * Description: Making Playing Card 
- * Version 0.1 : Making of suit and faces
+ * Description: Enumeration of Suit 
+ * Version 0.2 : Suits
  */
 namespace COMP123_S2017_Lesson11
 {
-    class Program
+    public enum Suit
     {
-        static void Main(string[] args)
-        {
-        }
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
     }
 }
