@@ -15,6 +15,11 @@ namespace COMP123_S2017_Lesson11
     {
         static void Main(string[] args)
         {
+            Deck deck = new Deck();
+            Console.WriteLine(deck.ToString());
+            Console.WriteLine();
+            deck.Shuffle();
+            Console.WriteLine(deck.ToString());
         }
     }
 }
