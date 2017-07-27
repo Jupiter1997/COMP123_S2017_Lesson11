@@ -6,7 +6,7 @@ using System.Text;
  * Name: Marvin Jupiter R. Vargas
  * Date: July 25, 2017
  * Description: This is Deck Class which inherits to Card collection
- * Version 0.2: Refactored Deck Class to inherit from card  list
+ * Version 0.3: Added deal1() methos to deal one card
  */
 namespace COMP123_S2017_Lesson11
 {
@@ -78,6 +78,16 @@ namespace COMP123_S2017_Lesson11
                 this[firstCard].Face = tempCard.Face;
                 this[firstCard].Suit = tempCard.Suit;
             }
+        }
+        public Card Deal1()
+        {
+            Card firstCard = this[0];
+            this.RemoveAt(0); // this removes the top card from the deck
+
+            
+            Console.WriteLine("Deck count" + this.Count); // test id remove works
+
+            return firstCard;
         }
     }
 }

@@ -20,7 +20,7 @@ namespace COMP123_S2017_Lesson11
         //Private Method
         protected override void _initialize()
         {
-            throw new NotImplementedException();
+            //this is empty
         }
         //public methods
         /// <summary>
@@ -31,7 +31,7 @@ namespace COMP123_S2017_Lesson11
         {
             string outputString = "";
             outputString += "This Hand Contains : \n";
-            outputString += "+++++++++++++++++++++++++++++++++++++++++++++++++++";
+            outputString += "+++++++++++++++++++++++++++++++++++++++++++++++++++\n";
             foreach (Card card in this)
             {
                 outputString += card.Face + " of " + card.Suit + "\n";
