@@ -23,12 +23,7 @@ namespace COMP123_S2017_Lesson11
                 return this._random;
             }
         }
-        // Publiv Properties
-        //Constructers
-        public Deck()
-        {
-            this._initialize();
-        }
+        // Public Properties
      
         //Private Methods
         /// <summary>
@@ -61,7 +56,7 @@ namespace COMP123_S2017_Lesson11
             string outputString = "";
             foreach (Card card in this)
             {
-                outputString += card.Face +"of "+ card.Suit + "\n";
+                outputString += card.Face +" of "+ card.Suit + "\n";
             }
             return outputString;
 
