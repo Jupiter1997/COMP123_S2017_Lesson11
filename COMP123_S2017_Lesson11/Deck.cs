@@ -6,11 +6,11 @@ using System.Text;
  * Name: Marvin Jupiter R. Vargas
  * Date: July 25, 2017
  * Description: This is Deck Class which inherits to Card collection
- * Version 0.5 : added public shuffle method
+ * Version 0.2: Refactored Deck Class to inherit from card  list
  */
 namespace COMP123_S2017_Lesson11
 {
-    public class Deck:List<Card>
+    public class Deck : CardList
     {
         // Private Instance Variable
         private Random _random;
@@ -35,7 +35,7 @@ namespace COMP123_S2017_Lesson11
         /// This is the private methos that add the cards in the deck list
         /// this method also initialize other class variable
         /// </summary>
-        private void _initialize()
+        protected override void _initialize()
         {
             //initialize the random object
             this._random = new Random();
@@ -57,6 +57,7 @@ namespace COMP123_S2017_Lesson11
         /// <returns>return deck of cards</returns>
         public override string ToString()
         {
+     
             string outputString = "";
             foreach (Card card in this)
             {

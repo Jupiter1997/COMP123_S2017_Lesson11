@@ -19,6 +19,7 @@ namespace COMP123_S2017_Lesson11
             Console.WriteLine(deck.ToString());
             Console.WriteLine();
             deck.Shuffle();
+            Console.WriteLine("Shuffled Deck: \n");
             Console.WriteLine(deck.ToString());
         }
     }
