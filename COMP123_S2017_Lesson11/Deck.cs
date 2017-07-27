@@ -6,7 +6,7 @@ using System.Text;
  * Name: Marvin Jupiter R. Vargas
  * Date: July 25, 2017
  * Description: This is Deck Class which inherits to Card collection
- * Version 0.3: Added deal1() methos to deal one card
+ * Version 0.4: Added deal5() methos to deal 5 card
  */
 namespace COMP123_S2017_Lesson11
 {
@@ -85,9 +85,21 @@ namespace COMP123_S2017_Lesson11
             this.RemoveAt(0); // this removes the top card from the deck
 
             
-            Console.WriteLine("Deck count" + this.Count); // test id remove works
+            Console.WriteLine("Deck count: " + this.Count); // test id remove works
 
             return firstCard;
+        }
+        public Hand Deal5()
+        {
+            Hand deal5 = new Hand();
+            for (int i = 0; i <= 4; i++)
+            {
+                
+                deal5.Add(this[0]);
+                this.RemoveAt(0);
+            }
+            Console.WriteLine("Deck count: " + this.Count);
+            return deal5;
         }
     }
 }
