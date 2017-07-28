@@ -6,7 +6,7 @@ using System.Text;
  * Name: Marvin Jupiter R. Vargas
  * Date: July 25, 2017
  * Description: This is the Card Class , using shufflign and dealing
- * Version 0.1 : Created Card Class
+ * Version 0.2 : Added a override string method
  */
 namespace COMP123_S2017_Lesson11
 {
@@ -56,6 +56,13 @@ namespace COMP123_S2017_Lesson11
         public object Clone()
         {
             return new Card(this._face, this._suit);
+        }
+
+        public override string ToString()
+        {
+            string outputString = "";
+            outputString += "The " + this.Face + " of " + this.Suit;
+            return outputString;
         }
     }
 }

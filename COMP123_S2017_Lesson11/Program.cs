@@ -31,6 +31,8 @@ namespace COMP123_S2017_Lesson11
 
             hand = deck.Deal5();
             Console.WriteLine(hand.ToString());
+            hand.HighestCards();
+            Console.ReadKey();
 
 
 

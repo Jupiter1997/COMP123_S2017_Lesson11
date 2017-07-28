@@ -6,7 +6,7 @@ using System.Text;
  * Name: Marvin Jupiter R. Vargas
  * Date: July 27, 2017
  * Description: this is the hand class the inherits from CardList
- * Version 0.1 : Created Hand Class
+ * Version 0.2 : Add Highest Cards method
  */
 namespace COMP123_S2017_Lesson11
 {
@@ -34,9 +34,23 @@ namespace COMP123_S2017_Lesson11
             outputString += "+++++++++++++++++++++++++++++++++++++++++++++++++++\n";
             foreach (Card card in this)
             {
-                outputString += card.Face + " of " + card.Suit + "\n";
+               outputString += card.Face + " of " + card.Suit + "\n";
+             // outputString += card.ToString() + "\n";
             }
+    
             return outputString;
+        }
+        public void HighestCards()
+        {
+
+            var sorted =
+                from card in this
+                orderby card.Face
+                select card;
+            Console.WriteLine("*****************************************************");
+            Console.WriteLine("The highest cards in the hand is: "
+                + sorted.Last().ToString() + " and "+ sorted.ElementAt(3));
+            Console.WriteLine("*****************************************************");
         }
     }
 }

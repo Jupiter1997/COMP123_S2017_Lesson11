@@ -6,14 +6,14 @@ using System.Text;
  * Name: Marvin Jupiter R. Vargas
  * Date: July 25, 2017
  * Description: Enumeration of Faces
- * Version 0.3 : Face
+ * Version 0.2 : Ace is the strongest face
  */
 namespace COMP123_S2017_Lesson11
 {
     public enum Face
     {
-        Ace = 1,
-        Two,
+       
+        Two = 1,
         Three,
         Four,
         Five,
@@ -24,6 +24,7 @@ namespace COMP123_S2017_Lesson11
         Ten,
         Jack,
         Queen,
-        King
+        King,
+        Ace
     }
 }

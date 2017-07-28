@@ -6,7 +6,7 @@ using System.Text;
  * Name: Marvin Jupiter R. Vargas
  * Date: July 25, 2017
  * Description: This is Deck Class which inherits to Card collection
- * Version 0.4: Added deal5() methos to deal 5 card
+ * Version 0.5: changed index King to Ace(Ace is the strongest Face)
  */
 namespace COMP123_S2017_Lesson11
 {
@@ -38,7 +38,7 @@ namespace COMP123_S2017_Lesson11
             //load the list with cards
             for (int suit = 0; suit <= (int)Suit.Spades; suit++)
             {
-                for (int face = 1; face <= (int)Face.King; face++)
+                for (int face = 1; face <= (int)Face.Ace; face++)
                 {
                     this.Add(new Card((Face)face, (Suit)suit));
                 }
